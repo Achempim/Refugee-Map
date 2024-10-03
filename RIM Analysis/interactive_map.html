@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_069cb482afbc8a32ef2486d1fdeb854c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_069cb482afbc8a32ef2486d1fdeb854c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_069cb482afbc8a32ef2486d1fdeb854c = L.map(
+                "map_069cb482afbc8a32ef2486d1fdeb854c",
+                {
+                    center: [10.0, 20.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2f25c0eb14dc18380ef995e8dcf55026 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2f25c0eb14dc18380ef995e8dcf55026.addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+            var marker_1b0ccf46e29e8bbfd8b6b5ed4a2da802 = L.marker(
+                [8.0, -12.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_ee9aa73af9046f21757ea1e247a67e45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8359acbc20c24a59ee07e66067567d99 = $(`<div id="html_8359acbc20c24a59ee07e66067567d99" style="width: 100.0%; height: 100.0%;"><b>Sierra Leone</b><br>Total Admitted: 6</div>`)[0];
+                popup_ee9aa73af9046f21757ea1e247a67e45.setContent(html_8359acbc20c24a59ee07e66067567d99);
+            
+        
+
+        marker_1b0ccf46e29e8bbfd8b6b5ed4a2da802.bindPopup(popup_ee9aa73af9046f21757ea1e247a67e45)
+        ;
+
+        
+    
+    
+            var marker_96b05dac6fa29ee8332a0f695c5322cb = L.marker(
+                [-30.0, 25.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_14678cf4145ab7f229268d5db8c08891 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0148541d2752de724a78b3940a5f6fec = $(`<div id="html_0148541d2752de724a78b3940a5f6fec" style="width: 100.0%; height: 100.0%;"><b>South Africa</b><br>Total Admitted: 1</div>`)[0];
+                popup_14678cf4145ab7f229268d5db8c08891.setContent(html_0148541d2752de724a78b3940a5f6fec);
+            
+        
+
+        marker_96b05dac6fa29ee8332a0f695c5322cb.bindPopup(popup_14678cf4145ab7f229268d5db8c08891)
+        ;
+
+        
+    
+    
+            var marker_05c82a1dd3ed6bf789c5344c1aef70a3 = L.marker(
+                [1.0, 32.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_5358b2b4c5e56114a2ea0d7d8ca55f62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_504bbb85dc980fce419df1549b798304 = $(`<div id="html_504bbb85dc980fce419df1549b798304" style="width: 100.0%; height: 100.0%;"><b>Uganda</b><br>Total Admitted: 46</div>`)[0];
+                popup_5358b2b4c5e56114a2ea0d7d8ca55f62.setContent(html_504bbb85dc980fce419df1549b798304);
+            
+        
+
+        marker_05c82a1dd3ed6bf789c5344c1aef70a3.bindPopup(popup_5358b2b4c5e56114a2ea0d7d8ca55f62)
+        ;
+
+        
+    
+    
+            var marker_b8343953314ac7b3882f245d200210f7 = L.marker(
+                [7.0, -5.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_a425220f1b804da33479ef0e92ca6647 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c6fb05607a06da3e5663935e43372a8 = $(`<div id="html_8c6fb05607a06da3e5663935e43372a8" style="width: 100.0%; height: 100.0%;"><b>Ivory Coast</b><br>Total Admitted: 74</div>`)[0];
+                popup_a425220f1b804da33479ef0e92ca6647.setContent(html_8c6fb05607a06da3e5663935e43372a8);
+            
+        
+
+        marker_b8343953314ac7b3882f245d200210f7.bindPopup(popup_a425220f1b804da33479ef0e92ca6647)
+        ;
+
+        
+    
+    
+            var marker_83f2f868ab6583cccec013cbf63b00ed = L.marker(
+                [-3.0, 30.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_ba7dc3c460536d533ce03742e6d12a48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35adc3e0c758b846ce08dbb4d986ac04 = $(`<div id="html_35adc3e0c758b846ce08dbb4d986ac04" style="width: 100.0%; height: 100.0%;"><b>Burundi</b><br>Total Admitted: 529</div>`)[0];
+                popup_ba7dc3c460536d533ce03742e6d12a48.setContent(html_35adc3e0c758b846ce08dbb4d986ac04);
+            
+        
+
+        marker_83f2f868ab6583cccec013cbf63b00ed.bindPopup(popup_ba7dc3c460536d533ce03742e6d12a48)
+        ;
+
+        
+    
+    
+            var marker_e5481fde6eb8247152ccf25fe1e89287 = L.marker(
+                [6.0, 12.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_b8bdb625fd2b8b31f0041d2136295e8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1edf4b44eecec2b22d87f527516fab7 = $(`<div id="html_a1edf4b44eecec2b22d87f527516fab7" style="width: 100.0%; height: 100.0%;"><b>Cameroon</b><br>Total Admitted: 110</div>`)[0];
+                popup_b8bdb625fd2b8b31f0041d2136295e8c.setContent(html_a1edf4b44eecec2b22d87f527516fab7);
+            
+        
+
+        marker_e5481fde6eb8247152ccf25fe1e89287.bindPopup(popup_b8bdb625fd2b8b31f0041d2136295e8c)
+        ;
+
+        
+    
+    
+            var marker_2b71f12a523ef2f2142ff43bffe1646e = L.marker(
+                [8.0, 1.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_6b4504753e489aac59968aad2b6b5657 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b339ad278412414cc1508580b922d97e = $(`<div id="html_b339ad278412414cc1508580b922d97e" style="width: 100.0%; height: 100.0%;"><b>Togo</b><br>Total Admitted: 2</div>`)[0];
+                popup_6b4504753e489aac59968aad2b6b5657.setContent(html_b339ad278412414cc1508580b922d97e);
+            
+        
+
+        marker_2b71f12a523ef2f2142ff43bffe1646e.bindPopup(popup_6b4504753e489aac59968aad2b6b5657)
+        ;
+
+        
+    
+    
+            var marker_7f8e2175cd078b74ece4a2d4f27acd25 = L.marker(
+                [12.0, -15.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_fa89574342f6516dee79c04b0f5fee57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a87cc3852a2e7f8afb6bffb44bae06fe = $(`<div id="html_a87cc3852a2e7f8afb6bffb44bae06fe" style="width: 100.0%; height: 100.0%;"><b>Guinea - Bissau</b><br>Total Admitted: 1</div>`)[0];
+                popup_fa89574342f6516dee79c04b0f5fee57.setContent(html_a87cc3852a2e7f8afb6bffb44bae06fe);
+            
+        
+
+        marker_7f8e2175cd078b74ece4a2d4f27acd25.bindPopup(popup_fa89574342f6516dee79c04b0f5fee57)
+        ;
+
+        
+    
+    
+            var marker_f76678da1e7cc88b9e69420038661bc0 = L.marker(
+                [17.0, -4.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_c4b8ed3cadd5dc301cf449e98dda76b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b66f4c25646ed306c4157dd6e57606f0 = $(`<div id="html_b66f4c25646ed306c4157dd6e57606f0" style="width: 100.0%; height: 100.0%;"><b>Mali</b><br>Total Admitted: 183</div>`)[0];
+                popup_c4b8ed3cadd5dc301cf449e98dda76b0.setContent(html_b66f4c25646ed306c4157dd6e57606f0);
+            
+        
+
+        marker_f76678da1e7cc88b9e69420038661bc0.bindPopup(popup_c4b8ed3cadd5dc301cf449e98dda76b0)
+        ;
+
+        
+    
+    
+            var marker_d5bba8d8d5ff1dd9a17353078521b6ab = L.marker(
+                [10.0, 8.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_b8b18bb08c8332966871475909ec40a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26e7feb09316cc1f7f874ae15b49f406 = $(`<div id="html_26e7feb09316cc1f7f874ae15b49f406" style="width: 100.0%; height: 100.0%;"><b>Nigeria</b><br>Total Admitted: 107</div>`)[0];
+                popup_b8b18bb08c8332966871475909ec40a3.setContent(html_26e7feb09316cc1f7f874ae15b49f406);
+            
+        
+
+        marker_d5bba8d8d5ff1dd9a17353078521b6ab.bindPopup(popup_b8b18bb08c8332966871475909ec40a3)
+        ;
+
+        
+    
+    
+            var marker_dfb9b25937bb54200ede02ee1b3f7bb1 = L.marker(
+                [-2.0, 30.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_e58b725b311cbf614ea4214e40a7b95a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48d72dc7adc994b6cc0e8ee20326e380 = $(`<div id="html_48d72dc7adc994b6cc0e8ee20326e380" style="width: 100.0%; height: 100.0%;"><b>Rwanda</b><br>Total Admitted: 222</div>`)[0];
+                popup_e58b725b311cbf614ea4214e40a7b95a.setContent(html_48d72dc7adc994b6cc0e8ee20326e380);
+            
+        
+
+        marker_dfb9b25937bb54200ede02ee1b3f7bb1.bindPopup(popup_e58b725b311cbf614ea4214e40a7b95a)
+        ;
+
+        
+    
+    
+            var marker_2f8e1b40e7c5d2420432bc3f7d2a4bb5 = L.marker(
+                [1.0, 38.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_572b4cea4482c6b340c09ba0a24df97e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45871e0d69507f6a19253e221ff66a77 = $(`<div id="html_45871e0d69507f6a19253e221ff66a77" style="width: 100.0%; height: 100.0%;"><b>Kenya</b><br>Total Admitted: 11</div>`)[0];
+                popup_572b4cea4482c6b340c09ba0a24df97e.setContent(html_45871e0d69507f6a19253e221ff66a77);
+            
+        
+
+        marker_2f8e1b40e7c5d2420432bc3f7d2a4bb5.bindPopup(popup_572b4cea4482c6b340c09ba0a24df97e)
+        ;
+
+        
+    
+    
+            var marker_67df7703d95e5ec12fa896353931a63f = L.marker(
+                [9.0, 39.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_65223dad70588cabe0c932acc5ec39b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a617223e30c0a62f820a5cbe528408d5 = $(`<div id="html_a617223e30c0a62f820a5cbe528408d5" style="width: 100.0%; height: 100.0%;"><b>Ethiopia</b><br>Total Admitted: 380</div>`)[0];
+                popup_65223dad70588cabe0c932acc5ec39b1.setContent(html_a617223e30c0a62f820a5cbe528408d5);
+            
+        
+
+        marker_67df7703d95e5ec12fa896353931a63f.bindPopup(popup_65223dad70588cabe0c932acc5ec39b1)
+        ;
+
+        
+    
+    
+            var marker_d18f75ac4ccda684149d39ae82effe34 = L.marker(
+                [13.0, -16.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_7a031cca63381b6e803b076b06d8253e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1aa4e2c41ad61ae673fea6c176e6b3c3 = $(`<div id="html_1aa4e2c41ad61ae673fea6c176e6b3c3" style="width: 100.0%; height: 100.0%;"><b>The Gambia</b><br>Total Admitted: 14</div>`)[0];
+                popup_7a031cca63381b6e803b076b06d8253e.setContent(html_1aa4e2c41ad61ae673fea6c176e6b3c3);
+            
+        
+
+        marker_d18f75ac4ccda684149d39ae82effe34.bindPopup(popup_7a031cca63381b6e803b076b06d8253e)
+        ;
+
+        
+    
+    
+            var marker_dd22ccb083e51242edf5f713a943a24b = L.marker(
+                [14.0, -14.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_9cd0b14c1263775920de3a7e0b161fd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9226688872438d1e580b222febf833c9 = $(`<div id="html_9226688872438d1e580b222febf833c9" style="width: 100.0%; height: 100.0%;"><b>Senegal</b><br>Total Admitted: 67</div>`)[0];
+                popup_9cd0b14c1263775920de3a7e0b161fd6.setContent(html_9226688872438d1e580b222febf833c9);
+            
+        
+
+        marker_dd22ccb083e51242edf5f713a943a24b.bindPopup(popup_9cd0b14c1263775920de3a7e0b161fd6)
+        ;
+
+        
+    
+    
+            var marker_8f03a1c2811e35b3d3396a2a3167ffa3 = L.marker(
+                [6.0, -10.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_00dab1ddbfc431e05bdfbf1cad8753bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52b975623d67475509cf18e80865b0a4 = $(`<div id="html_52b975623d67475509cf18e80865b0a4" style="width: 100.0%; height: 100.0%;"><b>Liberia</b><br>Total Admitted: 34</div>`)[0];
+                popup_00dab1ddbfc431e05bdfbf1cad8753bb.setContent(html_52b975623d67475509cf18e80865b0a4);
+            
+        
+
+        marker_8f03a1c2811e35b3d3396a2a3167ffa3.bindPopup(popup_00dab1ddbfc431e05bdfbf1cad8753bb)
+        ;
+
+        
+    
+    
+            var marker_0bc0c650ca3c582bb80e73f04a577d4c = L.marker(
+                [12.0, 18.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_124b7f52bfbac799b3d40a5d900182d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6b324ece332be873c698fcaede4b952 = $(`<div id="html_b6b324ece332be873c698fcaede4b952" style="width: 100.0%; height: 100.0%;"><b>Chad</b><br>Total Admitted: 10</div>`)[0];
+                popup_124b7f52bfbac799b3d40a5d900182d2.setContent(html_b6b324ece332be873c698fcaede4b952);
+            
+        
+
+        marker_0bc0c650ca3c582bb80e73f04a577d4c.bindPopup(popup_124b7f52bfbac799b3d40a5d900182d2)
+        ;
+
+        
+    
+    
+            var marker_cdb214a750e407c1eefd26d721064a4a = L.marker(
+                [-12.0, 18.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_6087a35913b699e409da7e3de075690f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e39ec07042a3833037249c0e322300c3 = $(`<div id="html_e39ec07042a3833037249c0e322300c3" style="width: 100.0%; height: 100.0%;"><b>Angola</b><br>Total Admitted: 2</div>`)[0];
+                popup_6087a35913b699e409da7e3de075690f.setContent(html_e39ec07042a3833037249c0e322300c3);
+            
+        
+
+        marker_cdb214a750e407c1eefd26d721064a4a.bindPopup(popup_6087a35913b699e409da7e3de075690f)
+        ;
+
+        
+    
+    
+            var marker_c534f14474a18e0482d46410ebd5e5c3 = L.marker(
+                [7.0, 21.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_98d2c7410fd7e466a2d8a59b0adea6c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d768a76dd59843bb854c3fa13edeb500 = $(`<div id="html_d768a76dd59843bb854c3fa13edeb500" style="width: 100.0%; height: 100.0%;"><b>Central African Republic</b><br>Total Admitted: 797</div>`)[0];
+                popup_98d2c7410fd7e466a2d8a59b0adea6c6.setContent(html_d768a76dd59843bb854c3fa13edeb500);
+            
+        
+
+        marker_c534f14474a18e0482d46410ebd5e5c3.bindPopup(popup_98d2c7410fd7e466a2d8a59b0adea6c6)
+        ;
+
+        
+    
+    
+            var marker_1a806f4f331f590fee7e94723b162719 = L.marker(
+                [12.0, -1.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_b970063ab89a36f80cbded76ea03ffdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bae82e855a14d0f18bb381320100ba24 = $(`<div id="html_bae82e855a14d0f18bb381320100ba24" style="width: 100.0%; height: 100.0%;"><b>Burkina Faso (UVolta)</b><br>Total Admitted: 4</div>`)[0];
+                popup_b970063ab89a36f80cbded76ea03ffdf.setContent(html_bae82e855a14d0f18bb381320100ba24);
+            
+        
+
+        marker_1a806f4f331f590fee7e94723b162719.bindPopup(popup_b970063ab89a36f80cbded76ea03ffdf)
+        ;
+
+        
+    
+    
+            var marker_a772bee293b54eccb397f0aeb0e2e541 = L.marker(
+                [-1.0, 15.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_b9f30ed8b1be0b726bc3135bd049b2f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcdf95a5151d9ae43f9d4d1fa917384b = $(`<div id="html_dcdf95a5151d9ae43f9d4d1fa917384b" style="width: 100.0%; height: 100.0%;"><b>Congo</b><br>Total Admitted: 352</div>`)[0];
+                popup_b9f30ed8b1be0b726bc3135bd049b2f6.setContent(html_dcdf95a5151d9ae43f9d4d1fa917384b);
+            
+        
+
+        marker_a772bee293b54eccb397f0aeb0e2e541.bindPopup(popup_b9f30ed8b1be0b726bc3135bd049b2f6)
+        ;
+
+        
+    
+    
+            var marker_e16075b560ea1e6bd485fd5c40f520f5 = L.marker(
+                [10.0, -10.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_325f577c9d19ad76e130d9ed1c2ef10e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b32db1e3cf0fa82a35ba76b4084c4a2 = $(`<div id="html_5b32db1e3cf0fa82a35ba76b4084c4a2" style="width: 100.0%; height: 100.0%;"><b>Guinea</b><br>Total Admitted: 82</div>`)[0];
+                popup_325f577c9d19ad76e130d9ed1c2ef10e.setContent(html_5b32db1e3cf0fa82a35ba76b4084c4a2);
+            
+        
+
+        marker_e16075b560ea1e6bd485fd5c40f520f5.bindPopup(popup_325f577c9d19ad76e130d9ed1c2ef10e)
+        ;
+
+        
+    
+    
+            var marker_e647622996ed0b0aa8077a5eb56eb03c = L.marker(
+                [-6.0, 35.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_56aa5dbadeac7a2c2b9d94ef4330d1a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52bc025b488853c5f7330bf0e827f3ef = $(`<div id="html_52bc025b488853c5f7330bf0e827f3ef" style="width: 100.0%; height: 100.0%;"><b>Tanzania</b><br>Total Admitted: 6</div>`)[0];
+                popup_56aa5dbadeac7a2c2b9d94ef4330d1a0.setContent(html_52bc025b488853c5f7330bf0e827f3ef);
+            
+        
+
+        marker_e647622996ed0b0aa8077a5eb56eb03c.bindPopup(popup_56aa5dbadeac7a2c2b9d94ef4330d1a0)
+        ;
+
+        
+    
+    
+            var marker_5c8b8f7ea3cad3ca48306d37d9e24225 = L.marker(
+                [11.0, 43.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_c8e81ea6f1d322ca7f5f1cecb6624609 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70719c3cab39be18622bb08e98f20687 = $(`<div id="html_70719c3cab39be18622bb08e98f20687" style="width: 100.0%; height: 100.0%;"><b>Djibouti</b><br>Total Admitted: 3</div>`)[0];
+                popup_c8e81ea6f1d322ca7f5f1cecb6624609.setContent(html_70719c3cab39be18622bb08e98f20687);
+            
+        
+
+        marker_5c8b8f7ea3cad3ca48306d37d9e24225.bindPopup(popup_c8e81ea6f1d322ca7f5f1cecb6624609)
+        ;
+
+        
+    
+    
+            var marker_927955b0f0514b7d36bb9a82b6a97e10 = L.marker(
+                [12.0, 2.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_f839752136ea1cc1b1477daa6d9f1611 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_192b5db3e5ab28789c89f67092f19ce9 = $(`<div id="html_192b5db3e5ab28789c89f67092f19ce9" style="width: 100.0%; height: 100.0%;"><b>Niger</b><br>Total Admitted: 8</div>`)[0];
+                popup_f839752136ea1cc1b1477daa6d9f1611.setContent(html_192b5db3e5ab28789c89f67092f19ce9);
+            
+        
+
+        marker_927955b0f0514b7d36bb9a82b6a97e10.bindPopup(popup_f839752136ea1cc1b1477daa6d9f1611)
+        ;
+
+        
+    
+    
+            var marker_3ab126e80f2cdb26e7e96f14e536cd0a = L.marker(
+                [20.0, -12.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_f41900bf9b790efe7a3bf24118330c72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12bee6aa4ca6a447f74a04d0797fd007 = $(`<div id="html_12bee6aa4ca6a447f74a04d0797fd007" style="width: 100.0%; height: 100.0%;"><b>Mauritania</b><br>Total Admitted: 3</div>`)[0];
+                popup_f41900bf9b790efe7a3bf24118330c72.setContent(html_12bee6aa4ca6a447f74a04d0797fd007);
+            
+        
+
+        marker_3ab126e80f2cdb26e7e96f14e536cd0a.bindPopup(popup_f41900bf9b790efe7a3bf24118330c72)
+        ;
+
+        
+    
+    
+            var marker_93b0ffb3ebe96a3334b6acae075e138f = L.marker(
+                [-5.0, 120.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_114e778b78d4989e5115f794b3f9d7a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e086c4aa2f89543c46a6ed9736b6ca5d = $(`<div id="html_e086c4aa2f89543c46a6ed9736b6ca5d" style="width: 100.0%; height: 100.0%;"><b>Indonesia</b><br>Total Admitted: 4</div>`)[0];
+                popup_114e778b78d4989e5115f794b3f9d7a0.setContent(html_e086c4aa2f89543c46a6ed9736b6ca5d);
+            
+        
+
+        marker_93b0ffb3ebe96a3334b6acae075e138f.bindPopup(popup_114e778b78d4989e5115f794b3f9d7a0)
+        ;
+
+        
+    
+    
+            var marker_c1fadecf6119741f07af559ad7a06412 = L.marker(
+                [35.0, 105.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_560f7f32fd5887bb7be7a733da75cfb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_392a9d1881af32b0d568901bb825e0ab = $(`<div id="html_392a9d1881af32b0d568901bb825e0ab" style="width: 100.0%; height: 100.0%;"><b>China</b><br>Total Admitted: 7</div>`)[0];
+                popup_560f7f32fd5887bb7be7a733da75cfb8.setContent(html_392a9d1881af32b0d568901bb825e0ab);
+            
+        
+
+        marker_c1fadecf6119741f07af559ad7a06412.bindPopup(popup_560f7f32fd5887bb7be7a733da75cfb8)
+        ;
+
+        
+    
+    
+            var marker_40755708da29caaa186a018d8d5896da = L.marker(
+                [12.0, 105.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_58c9c82ea2dfa67d120c60980179c4aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2f223853fcc32907c99009d2ddb0c9a = $(`<div id="html_b2f223853fcc32907c99009d2ddb0c9a" style="width: 100.0%; height: 100.0%;"><b>Cambodia</b><br>Total Admitted: 56</div>`)[0];
+                popup_58c9c82ea2dfa67d120c60980179c4aa.setContent(html_b2f223853fcc32907c99009d2ddb0c9a);
+            
+        
+
+        marker_40755708da29caaa186a018d8d5896da.bindPopup(popup_58c9c82ea2dfa67d120c60980179c4aa)
+        ;
+
+        
+    
+    
+            var marker_7160174ca48514dedbccd563a3477562 = L.marker(
+                [16.0, 106.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_176252602e028f13190962f60ce2dc46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f9e44bfbc5b83494ae6709836466c52 = $(`<div id="html_6f9e44bfbc5b83494ae6709836466c52" style="width: 100.0%; height: 100.0%;"><b>Vietnam</b><br>Total Admitted: 113</div>`)[0];
+                popup_176252602e028f13190962f60ce2dc46.setContent(html_6f9e44bfbc5b83494ae6709836466c52);
+            
+        
+
+        marker_7160174ca48514dedbccd563a3477562.bindPopup(popup_176252602e028f13190962f60ce2dc46)
+        ;
+
+        
+    
+    
+            var marker_52a18e7960247433d7eff7cdb679345d = L.marker(
+                [60.0, 15.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_e14fc3821906ae83c58632521ecdedb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eec77e820a96f7834391d65e514a981c = $(`<div id="html_eec77e820a96f7834391d65e514a981c" style="width: 100.0%; height: 100.0%;"><b>Sweden</b><br>Total Admitted: 3</div>`)[0];
+                popup_e14fc3821906ae83c58632521ecdedb8.setContent(html_eec77e820a96f7834391d65e514a981c);
+            
+        
+
+        marker_52a18e7960247433d7eff7cdb679345d.bindPopup(popup_e14fc3821906ae83c58632521ecdedb8)
+        ;
+
+        
+    
+    
+            var marker_5d3f42bb82ebce31cf989bea9fb953ef = L.marker(
+                [60.0, 100.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_2545f20a2c1f176e221c67c7b5711ff1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb33b919cb40a6129bbbd867defceba9 = $(`<div id="html_cb33b919cb40a6129bbbd867defceba9" style="width: 100.0%; height: 100.0%;"><b>Russia</b><br>Total Admitted: 337</div>`)[0];
+                popup_2545f20a2c1f176e221c67c7b5711ff1.setContent(html_cb33b919cb40a6129bbbd867defceba9);
+            
+        
+
+        marker_5d3f42bb82ebce31cf989bea9fb953ef.bindPopup(popup_2545f20a2c1f176e221c67c7b5711ff1)
+        ;
+
+        
+    
+    
+            var marker_8d23260de2b432d7757a9dd5db835139 = L.marker(
+                [47.0, 28.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_c698d3ecb099f1176e06c1ddf54ccea2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3e3e54fa405c656514439943dc607a4 = $(`<div id="html_a3e3e54fa405c656514439943dc607a4" style="width: 100.0%; height: 100.0%;"><b>Moldova</b><br>Total Admitted: 362</div>`)[0];
+                popup_c698d3ecb099f1176e06c1ddf54ccea2.setContent(html_a3e3e54fa405c656514439943dc607a4);
+            
+        
+
+        marker_8d23260de2b432d7757a9dd5db835139.bindPopup(popup_c698d3ecb099f1176e06c1ddf54ccea2)
+        ;
+
+        
+    
+    
+            var marker_a95b1e40e143ec211614473b2bcab3b5 = L.marker(
+                [41.0, 75.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_a7bc8420c9e7a22093437c7ca4986172 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac47f805d3fa25ac54a9b208a3c00a81 = $(`<div id="html_ac47f805d3fa25ac54a9b208a3c00a81" style="width: 100.0%; height: 100.0%;"><b>Kyrgyzstan</b><br>Total Admitted: 60</div>`)[0];
+                popup_a7bc8420c9e7a22093437c7ca4986172.setContent(html_ac47f805d3fa25ac54a9b208a3c00a81);
+            
+        
+
+        marker_a95b1e40e143ec211614473b2bcab3b5.bindPopup(popup_a7bc8420c9e7a22093437c7ca4986172)
+        ;
+
+        
+    
+    
+            var marker_0f6f163e1374f9db37357c597b86e9e3 = L.marker(
+                [41.0, 64.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_f53375a774dec5b6e391295bf977aa1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df9a5fc2623b2967309fac995a9970f9 = $(`<div id="html_df9a5fc2623b2967309fac995a9970f9" style="width: 100.0%; height: 100.0%;"><b>Uzbekistan</b><br>Total Admitted: 46</div>`)[0];
+                popup_f53375a774dec5b6e391295bf977aa1b.setContent(html_df9a5fc2623b2967309fac995a9970f9);
+            
+        
+
+        marker_0f6f163e1374f9db37357c597b86e9e3.bindPopup(popup_f53375a774dec5b6e391295bf977aa1b)
+        ;
+
+        
+    
+    
+            var marker_3502d999568ab7b6d4090bf356c8ae37 = L.marker(
+                [60.0, 10.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_5ad7a955a82f2d1d81ce9e3b7f3823a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9090665a8423ec334a7cbd3677a27af8 = $(`<div id="html_9090665a8423ec334a7cbd3677a27af8" style="width: 100.0%; height: 100.0%;"><b>Norway</b><br>Total Admitted: 1</div>`)[0];
+                popup_5ad7a955a82f2d1d81ce9e3b7f3823a3.setContent(html_9090665a8423ec334a7cbd3677a27af8);
+            
+        
+
+        marker_3502d999568ab7b6d4090bf356c8ae37.bindPopup(popup_5ad7a955a82f2d1d81ce9e3b7f3823a3)
+        ;
+
+        
+    
+    
+            var marker_457b80253d753528973dbacb60f1754e = L.marker(
+                [48.0, 68.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_6dca75cebb534609f93ae24d688534ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d176aa677372bf34d3f765a40d934db = $(`<div id="html_5d176aa677372bf34d3f765a40d934db" style="width: 100.0%; height: 100.0%;"><b>Kazakhstan</b><br>Total Admitted: 109</div>`)[0];
+                popup_6dca75cebb534609f93ae24d688534ba.setContent(html_5d176aa677372bf34d3f765a40d934db);
+            
+        
+
+        marker_457b80253d753528973dbacb60f1754e.bindPopup(popup_6dca75cebb534609f93ae24d688534ba)
+        ;
+
+        
+    
+    
+            var marker_4e8b9eef96b335078bcd114865a09cc2 = L.marker(
+                [40.0, 45.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_3265c57060eb3a28ea2d620d92cf7893 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8eec83616145eaa65c2582b675bb7a03 = $(`<div id="html_8eec83616145eaa65c2582b675bb7a03" style="width: 100.0%; height: 100.0%;"><b>Armenia</b><br>Total Admitted: 257</div>`)[0];
+                popup_3265c57060eb3a28ea2d620d92cf7893.setContent(html_8eec83616145eaa65c2582b675bb7a03);
+            
+        
+
+        marker_4e8b9eef96b335078bcd114865a09cc2.bindPopup(popup_3265c57060eb3a28ea2d620d92cf7893)
+        ;
+
+        
+    
+    
+            var marker_aa47e8033c0687e5eeee9034e2805840 = L.marker(
+                [39.0, 59.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_16fce6cb0420e3f20aef61d655804105 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f89e043fb6937c30b340987a3ef90073 = $(`<div id="html_f89e043fb6937c30b340987a3ef90073" style="width: 100.0%; height: 100.0%;"><b>Turkmenistan</b><br>Total Admitted: 8</div>`)[0];
+                popup_16fce6cb0420e3f20aef61d655804105.setContent(html_f89e043fb6937c30b340987a3ef90073);
+            
+        
+
+        marker_aa47e8033c0687e5eeee9034e2805840.bindPopup(popup_16fce6cb0420e3f20aef61d655804105)
+        ;
+
+        
+    
+    
+            var marker_1577008db8e74b85f491495ee0d7dbec = L.marker(
+                [51.0, 10.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_948a281333956cb71c9a069ebde0e59f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8b36c049393646853f7e5142eb5e057 = $(`<div id="html_e8b36c049393646853f7e5142eb5e057" style="width: 100.0%; height: 100.0%;"><b>Germany</b><br>Total Admitted: 1</div>`)[0];
+                popup_948a281333956cb71c9a069ebde0e59f.setContent(html_e8b36c049393646853f7e5142eb5e057);
+            
+        
+
+        marker_1577008db8e74b85f491495ee0d7dbec.bindPopup(popup_948a281333956cb71c9a069ebde0e59f)
+        ;
+
+        
+    
+    
+            var marker_1a9ef868f6fe5db9f42250d6d9d1f9eb = L.marker(
+                [42.0, 43.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_7618eecbdaa27ec0bde2477b28961207 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5899157b33da21032998f5a44af98107 = $(`<div id="html_5899157b33da21032998f5a44af98107" style="width: 100.0%; height: 100.0%;"><b>Georgia</b><br>Total Admitted: 34</div>`)[0];
+                popup_7618eecbdaa27ec0bde2477b28961207.setContent(html_5899157b33da21032998f5a44af98107);
+            
+        
+
+        marker_1a9ef868f6fe5db9f42250d6d9d1f9eb.bindPopup(popup_7618eecbdaa27ec0bde2477b28961207)
+        ;
+
+        
+    
+    
+            var marker_bd263cb060b4efbc22b7561b41aac35c = L.marker(
+                [53.0, 28.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_9f46a38c3deb3053e2eeadb17761c968 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c7738770de610c7d9f3c1e90a3f2173 = $(`<div id="html_4c7738770de610c7d9f3c1e90a3f2173" style="width: 100.0%; height: 100.0%;"><b>Belarus</b><br>Total Admitted: 348</div>`)[0];
+                popup_9f46a38c3deb3053e2eeadb17761c968.setContent(html_4c7738770de610c7d9f3c1e90a3f2173);
+            
+        
+
+        marker_bd263cb060b4efbc22b7561b41aac35c.bindPopup(popup_9f46a38c3deb3053e2eeadb17761c968)
+        ;
+
+        
+    
+    
+            var marker_a73082ff5f10283c36d053735afda9f5 = L.marker(
+                [21.0, 79.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_e65dce9ee58dc258f2ccacda55c4cae7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aed790eea03f955d1dcfffaba82631a7 = $(`<div id="html_aed790eea03f955d1dcfffaba82631a7" style="width: 100.0%; height: 100.0%;"><b>Cuba</b><br>Total Admitted: 200</div>`)[0];
+                popup_e65dce9ee58dc258f2ccacda55c4cae7.setContent(html_aed790eea03f955d1dcfffaba82631a7);
+            
+        
+
+        marker_a73082ff5f10283c36d053735afda9f5.bindPopup(popup_e65dce9ee58dc258f2ccacda55c4cae7)
+        ;
+
+        
+    
+    
+            var marker_f7016e54dc86096b41f32077a5124ab2 = L.marker(
+                [-10.0, -55.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_9251b2a32ea4a71d6d2916db5282c8cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0441e4a2d55bac64c56af9d9a57eb188 = $(`<div id="html_0441e4a2d55bac64c56af9d9a57eb188" style="width: 100.0%; height: 100.0%;"><b>Brazil</b><br>Total Admitted: 3</div>`)[0];
+                popup_9251b2a32ea4a71d6d2916db5282c8cd.setContent(html_0441e4a2d55bac64c56af9d9a57eb188);
+            
+        
+
+        marker_f7016e54dc86096b41f32077a5124ab2.bindPopup(popup_9251b2a32ea4a71d6d2916db5282c8cd)
+        ;
+
+        
+    
+    
+            var marker_848df07875a0dce230e3e14a15cb24d3 = L.marker(
+                [18.0, 77.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_9114008a7dbb50f6ea0f0832b9179b59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bef62e18f85d504270615f21552d0b62 = $(`<div id="html_bef62e18f85d504270615f21552d0b62" style="width: 100.0%; height: 100.0%;"><b>Jamaica</b><br>Total Admitted: 16</div>`)[0];
+                popup_9114008a7dbb50f6ea0f0832b9179b59.setContent(html_bef62e18f85d504270615f21552d0b62);
+            
+        
+
+        marker_848df07875a0dce230e3e14a15cb24d3.bindPopup(popup_9114008a7dbb50f6ea0f0832b9179b59)
+        ;
+
+        
+    
+    
+            var marker_f7ccbe7e4b27f24b9d7e9334ea3a6211 = L.marker(
+                [15.0, -86.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_91a639d8c8998ee809053c27f3755c42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_098435cf032a9cba1d425987a3fdce21 = $(`<div id="html_098435cf032a9cba1d425987a3fdce21" style="width: 100.0%; height: 100.0%;"><b>Honduras</b><br>Total Admitted: 828</div>`)[0];
+                popup_91a639d8c8998ee809053c27f3755c42.setContent(html_098435cf032a9cba1d425987a3fdce21);
+            
+        
+
+        marker_f7ccbe7e4b27f24b9d7e9334ea3a6211.bindPopup(popup_91a639d8c8998ee809053c27f3755c42)
+        ;
+
+        
+    
+    
+            var marker_a80a202c968d9075880de0181c2d2cd5 = L.marker(
+                [19.0, -72.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_840417a1d19869936627e86c5a2cd1cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60bb4c913e308215b6bd45dd48db674a = $(`<div id="html_60bb4c913e308215b6bd45dd48db674a" style="width: 100.0%; height: 100.0%;"><b>Haiti</b><br>Total Admitted: 230</div>`)[0];
+                popup_840417a1d19869936627e86c5a2cd1cc.setContent(html_60bb4c913e308215b6bd45dd48db674a);
+            
+        
+
+        marker_a80a202c968d9075880de0181c2d2cd5.bindPopup(popup_840417a1d19869936627e86c5a2cd1cc)
+        ;
+
+        
+    
+    
+            var marker_91d89d8c797fe93f513f41419c1e0bce = L.marker(
+                [10.0, -84.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_80a12a98c0edec22eb7b12b7eee9bdc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d341e9f561d54bc87ce7a33868f86a97 = $(`<div id="html_d341e9f561d54bc87ce7a33868f86a97" style="width: 100.0%; height: 100.0%;"><b>Costa Rica</b><br>Total Admitted: 1</div>`)[0];
+                popup_80a12a98c0edec22eb7b12b7eee9bdc9.setContent(html_d341e9f561d54bc87ce7a33868f86a97);
+            
+        
+
+        marker_91d89d8c797fe93f513f41419c1e0bce.bindPopup(popup_80a12a98c0edec22eb7b12b7eee9bdc9)
+        ;
+
+        
+    
+    
+            var marker_013e4caccd57e687d2af020a2e63b652 = L.marker(
+                [-10.0, 76.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_f5e87782d41389de2bf807a7bc4e36d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5878b992269c55d898df1e85f25cd2de = $(`<div id="html_5878b992269c55d898df1e85f25cd2de" style="width: 100.0%; height: 100.0%;"><b>Peru</b><br>Total Admitted: 1</div>`)[0];
+                popup_f5e87782d41389de2bf807a7bc4e36d2.setContent(html_5878b992269c55d898df1e85f25cd2de);
+            
+        
+
+        marker_013e4caccd57e687d2af020a2e63b652.bindPopup(popup_f5e87782d41389de2bf807a7bc4e36d2)
+        ;
+
+        
+    
+    
+            var marker_26b02be29cd8b337200358527edb3192 = L.marker(
+                [60.0, -95.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_de2907b585caae4d38636f7f65a31abd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_714473f890280f203aa3f12150f597df = $(`<div id="html_714473f890280f203aa3f12150f597df" style="width: 100.0%; height: 100.0%;"><b>Canada</b><br>Total Admitted: 1</div>`)[0];
+                popup_de2907b585caae4d38636f7f65a31abd.setContent(html_714473f890280f203aa3f12150f597df);
+            
+        
+
+        marker_26b02be29cd8b337200358527edb3192.bindPopup(popup_de2907b585caae4d38636f7f65a31abd)
+        ;
+
+        
+    
+    
+            var marker_fcad4d7e7b7d26e571f461096533dc91 = L.marker(
+                [5.0, -59.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_6f24b0521814306ed35fb4606608bc62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19648cb88585974d61a773ff3a0b6c0b = $(`<div id="html_19648cb88585974d61a773ff3a0b6c0b" style="width: 100.0%; height: 100.0%;"><b>Guyana</b><br>Total Admitted: 4</div>`)[0];
+                popup_6f24b0521814306ed35fb4606608bc62.setContent(html_19648cb88585974d61a773ff3a0b6c0b);
+            
+        
+
+        marker_fcad4d7e7b7d26e571f461096533dc91.bindPopup(popup_6f24b0521814306ed35fb4606608bc62)
+        ;
+
+        
+    
+    
+            var marker_58a8ea25e6b684caa5caffbf38864966 = L.marker(
+                [34.0, 36.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_5e7fa3ea6a30324217c3a4928df9f1b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12c6ff0ddbbe545f1fa689dae43143d3 = $(`<div id="html_12c6ff0ddbbe545f1fa689dae43143d3" style="width: 100.0%; height: 100.0%;"><b>Lebanon</b><br>Total Admitted: 6</div>`)[0];
+                popup_5e7fa3ea6a30324217c3a4928df9f1b9.setContent(html_12c6ff0ddbbe545f1fa689dae43143d3);
+            
+        
+
+        marker_58a8ea25e6b684caa5caffbf38864966.bindPopup(popup_5e7fa3ea6a30324217c3a4928df9f1b9)
+        ;
+
+        
+    
+    
+            var marker_78fe9b24e088223c6142feb48a59583f = L.marker(
+                [7.0, 81.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_c4bb16268c270119ee8d2575ef58e28e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bce16cc18910d079a5647d971dfc6b6d = $(`<div id="html_bce16cc18910d079a5647d971dfc6b6d" style="width: 100.0%; height: 100.0%;"><b>Sri Lanka (Ceylon)</b><br>Total Admitted: 12</div>`)[0];
+                popup_c4bb16268c270119ee8d2575ef58e28e.setContent(html_bce16cc18910d079a5647d971dfc6b6d);
+            
+        
+
+        marker_78fe9b24e088223c6142feb48a59583f.bindPopup(popup_c4bb16268c270119ee8d2575ef58e28e)
+        ;
+
+        
+    
+    
+            var marker_dc49ce685a4f22bb0ff4574ce38ea2da = L.marker(
+                [39.0, 35.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_70f1060f8f64aeef3c2d7c588a9f4876 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_412ecdacc69a9ee03bcccb377e542d38 = $(`<div id="html_412ecdacc69a9ee03bcccb377e542d38" style="width: 100.0%; height: 100.0%;"><b>Turkey</b><br>Total Admitted: 1</div>`)[0];
+                popup_70f1060f8f64aeef3c2d7c588a9f4876.setContent(html_412ecdacc69a9ee03bcccb377e542d38);
+            
+        
+
+        marker_dc49ce685a4f22bb0ff4574ce38ea2da.bindPopup(popup_70f1060f8f64aeef3c2d7c588a9f4876)
+        ;
+
+        
+    
+    
+            var marker_821dc49043654a2f7bdc48149940b32e = L.marker(
+                [15.0, 48.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_23ae7704e5fcaba37323d334aabba463 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0822df815ada111f64ef2661d3fffe50 = $(`<div id="html_0822df815ada111f64ef2661d3fffe50" style="width: 100.0%; height: 100.0%;"><b>Yemen</b><br>Total Admitted: 129</div>`)[0];
+                popup_23ae7704e5fcaba37323d334aabba463.setContent(html_0822df815ada111f64ef2661d3fffe50);
+            
+        
+
+        marker_821dc49043654a2f7bdc48149940b32e.bindPopup(popup_23ae7704e5fcaba37323d334aabba463)
+        ;
+
+        
+    
+    
+            var marker_3e898228d04a669a79f4a6f4e05420c5 = L.marker(
+                [24.0, 90.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_58bd175f593d08ca12c43307df1eb20f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cd757688d8216012c94a0b2d73cbba9 = $(`<div id="html_7cd757688d8216012c94a0b2d73cbba9" style="width: 100.0%; height: 100.0%;"><b>Bangladesh</b><br>Total Admitted: 2</div>`)[0];
+                popup_58bd175f593d08ca12c43307df1eb20f.setContent(html_7cd757688d8216012c94a0b2d73cbba9);
+            
+        
+
+        marker_3e898228d04a669a79f4a6f4e05420c5.bindPopup(popup_58bd175f593d08ca12c43307df1eb20f)
+        ;
+
+        
+    
+    
+            var marker_d449bc3d7da074756f34d987e8461dee = L.marker(
+                [25.0, 17.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_a20cb405499f67c19b0abf1dcfa55f89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65b5262cf9f7f383add4316ec542710e = $(`<div id="html_65b5262cf9f7f383add4316ec542710e" style="width: 100.0%; height: 100.0%;"><b>Libya</b><br>Total Admitted: 42</div>`)[0];
+                popup_a20cb405499f67c19b0abf1dcfa55f89.setContent(html_65b5262cf9f7f383add4316ec542710e);
+            
+        
+
+        marker_d449bc3d7da074756f34d987e8461dee.bindPopup(popup_a20cb405499f67c19b0abf1dcfa55f89)
+        ;
+
+        
+    
+    
+            var marker_392b19389e4403bb98593859b24dc350 = L.marker(
+                [32.0, 35.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_f6a4139e354372ab22712f88a5150ca8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14522f725cd6bf114f473792fc1d6004 = $(`<div id="html_14522f725cd6bf114f473792fc1d6004" style="width: 100.0%; height: 100.0%;"><b>Palestine</b><br>Total Admitted: 17</div>`)[0];
+                popup_f6a4139e354372ab22712f88a5150ca8.setContent(html_14522f725cd6bf114f473792fc1d6004);
+            
+        
+
+        marker_392b19389e4403bb98593859b24dc350.bindPopup(popup_f6a4139e354372ab22712f88a5150ca8)
+        ;
+
+        
+    
+    
+            var marker_471a7dc28001b37645c3a51d9da2ceeb = L.marker(
+                [31.0, 36.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_e4ddc81f859d2f3e5a5529eb1f659179 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de439fd628b136da85d7ce80f2967c34 = $(`<div id="html_de439fd628b136da85d7ce80f2967c34" style="width: 100.0%; height: 100.0%;"><b>Jordan</b><br>Total Admitted: 7</div>`)[0];
+                popup_e4ddc81f859d2f3e5a5529eb1f659179.setContent(html_de439fd628b136da85d7ce80f2967c34);
+            
+        
+
+        marker_471a7dc28001b37645c3a51d9da2ceeb.bindPopup(popup_e4ddc81f859d2f3e5a5529eb1f659179)
+        ;
+
+        
+    
+    
+            var marker_20d099225ab67ecb36bee89a5f71d080 = L.marker(
+                [28.0, 3.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_5a8809cb1727bf273225cb45644036b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97909a3959274104036d46008036f4fd = $(`<div id="html_97909a3959274104036d46008036f4fd" style="width: 100.0%; height: 100.0%;"><b>Algeria</b><br>Total Admitted: 13</div>`)[0];
+                popup_5a8809cb1727bf273225cb45644036b8.setContent(html_97909a3959274104036d46008036f4fd);
+            
+        
+
+        marker_20d099225ab67ecb36bee89a5f71d080.bindPopup(popup_5a8809cb1727bf273225cb45644036b8)
+        ;
+
+        
+    
+    
+            var marker_460148f14bacbad38a11ef4d3edf46fa = L.marker(
+                [20.0, 77.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_30a85c145bab0ee3dd96c24aa97001c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f342f6c185b079ef1c325347663fb93e = $(`<div id="html_f342f6c185b079ef1c325347663fb93e" style="width: 100.0%; height: 100.0%;"><b>India</b><br>Total Admitted: 7</div>`)[0];
+                popup_30a85c145bab0ee3dd96c24aa97001c9.setContent(html_f342f6c185b079ef1c325347663fb93e);
+            
+        
+
+        marker_460148f14bacbad38a11ef4d3edf46fa.bindPopup(popup_30a85c145bab0ee3dd96c24aa97001c9)
+        ;
+
+        
+    
+    
+            var marker_4ddd5998f7b87b2298347675e8dcbfc6 = L.marker(
+                [34.0, 9.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_133c9f709a9312522d13f3a7576215d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ef894db4712f660cc11725ee2c68584 = $(`<div id="html_9ef894db4712f660cc11725ee2c68584" style="width: 100.0%; height: 100.0%;"><b>Tunisia</b><br>Total Admitted: 2</div>`)[0];
+                popup_133c9f709a9312522d13f3a7576215d6.setContent(html_9ef894db4712f660cc11725ee2c68584);
+            
+        
+
+        marker_4ddd5998f7b87b2298347675e8dcbfc6.bindPopup(popup_133c9f709a9312522d13f3a7576215d6)
+        ;
+
+        
+    
+    
+            var marker_3efbd7be69bad2e18ce64aac0e8e4134 = L.marker(
+                [27.0, 30.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_78a3e0506649f014f34dfe3588cdd50b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2184199fb7c01749bb4ff5444838b63a = $(`<div id="html_2184199fb7c01749bb4ff5444838b63a" style="width: 100.0%; height: 100.0%;"><b>Egypt</b><br>Total Admitted: 3</div>`)[0];
+                popup_78a3e0506649f014f34dfe3588cdd50b.setContent(html_2184199fb7c01749bb4ff5444838b63a);
+            
+        
+
+        marker_3efbd7be69bad2e18ce64aac0e8e4134.bindPopup(popup_78a3e0506649f014f34dfe3588cdd50b)
+        ;
+
+        
+    
+    
+            var marker_fcb5833e9dd57a17c6f8e26f4f32c560 = L.marker(
+                [28.0, 84.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_a4b16d3654f58446469ae311a68a9d05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7f0f54e09f2baf34c1ecbb383b66b9e = $(`<div id="html_f7f0f54e09f2baf34c1ecbb383b66b9e" style="width: 100.0%; height: 100.0%;"><b>Nepal</b><br>Total Admitted: 5</div>`)[0];
+                popup_a4b16d3654f58446469ae311a68a9d05.setContent(html_f7f0f54e09f2baf34c1ecbb383b66b9e);
+            
+        
+
+        marker_fcb5833e9dd57a17c6f8e26f4f32c560.bindPopup(popup_a4b16d3654f58446469ae311a68a9d05)
+        ;
+
+        
+    
+    
+            var marker_79d1286d49896cf1ba5e701a46a6d1d9 = L.marker(
+                [30.0, 70.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_32a4e6422630d5f791d9d98ee83b80ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f01eb0738d87881ab3e9c0e6aa5ff66a = $(`<div id="html_f01eb0738d87881ab3e9c0e6aa5ff66a" style="width: 100.0%; height: 100.0%;"><b>Pakistan</b><br>Total Admitted: 780</div>`)[0];
+                popup_32a4e6422630d5f791d9d98ee83b80ba.setContent(html_f01eb0738d87881ab3e9c0e6aa5ff66a);
+            
+        
+
+        marker_79d1286d49896cf1ba5e701a46a6d1d9.bindPopup(popup_32a4e6422630d5f791d9d98ee83b80ba)
+        ;
+
+        
+    
+    
+            var marker_8def80e70645586b7f4994b566f77412 = L.marker(
+                [32.0, 53.0],
+                {}
+            ).addTo(map_069cb482afbc8a32ef2486d1fdeb854c);
+        
+    
+        var popup_8b019f60c2518c1865396744d45c3d94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdd1bf3a12ad16d00c98e7d90190ff51 = $(`<div id="html_bdd1bf3a12ad16d00c98e7d90190ff51" style="width: 100.0%; height: 100.0%;"><b>Iran</b><br>Total Admitted: 441</div>`)[0];
+                popup_8b019f60c2518c1865396744d45c3d94.setContent(html_bdd1bf3a12ad16d00c98e7d90190ff51);
+            
+        
+
+        marker_8def80e70645586b7f4994b566f77412.bindPopup(popup_8b019f60c2518c1865396744d45c3d94)
+        ;
+
+        
+    
+</script>
+</html>
