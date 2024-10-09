@@ -3,8 +3,8 @@ import pandas as pd
 import folium
 
 # Step 2: Load the CSV file
-file_path = r'C:\Users\HP\Desktop\RIM Analysis\Year-to-date.csv'  # Update the file path
-data = pd.read_csv(file_path)
+file_path = ("..Analysis/Year-to-date.csv")  # Update the file path
+Year_to_date = pd.read_csv(file_path)
 
 # Step 3: Function to check if coordinates are valid
 def is_valid_coordinates(lat, lon):
@@ -14,7 +14,7 @@ def is_valid_coordinates(lat, lon):
 map_refugees = folium.Map(location=[20, 0], zoom_start=2)  # Centered on Africa
 
 # Step 5: Iterate through the data and create markers with text for valid coordinates
-for index, row in data.iterrows():
+for index, row in date.iterrows():
     country = row['Country']
     lat = row['Latitude']
     lon = row['Longitude']
